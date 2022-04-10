@@ -57,19 +57,21 @@
                 <li><h2>Команда $ban</h2></li>
                 <div class="description">Банит кого-либо</div>
                 <li><h2>Команда $changelog</h2></li>
-                <div class="description">Эта <a href="separate/3.html">страница</a></div>
+                <div class="description">показывает изменение версий</a></div>
                 <li><h2>Команда $poll</h2></li>
                 <div class="description">Делает опрос с опциями</div>
                 <li><h2>Команда $avatar</h2></li>
                 <div class="description">Просматривает аватар юзера</div>
                 <li><h2>Команда $play</h2></li>
-                <div class="description">Проигрывает аудио, пока что поддерживает только прямые ссылки либо файлы</div>
+                <div class="description">Проигрывает аудио</div>
+                <li><h2>Команда $stop</h2></li>
+                <div class="description">Останавливает аудио</div>
             </ul>
         </div>
         <sl id="syntax">.</sl>
         <div class="syntax">
             <h1>Синтаксис</h1>
-            <h2>() - обязательно, [] - необязательно</h2>
+            <h2>() - обязательно, [] - необязательно, {} - альтернативное написание</h2>
             <code>
                 <pre>
 $help
@@ -79,8 +81,6 @@ $say (сообщение)
 $sayembed (название) (описание)
 
 <yellow>Подсказка: если ввести например несколько слов в кавычки после $sayembed, то в названии будет несколько слов</yellow>
-
-$предыстория
 
 $invite
 
@@ -98,7 +98,9 @@ $play (Ссылка или файл)
 
 $list
 
-<red>ВНИМАНИЕ! Не поддерживает youtu.be</red>
+$stop
+
+$rand {рандом, random} [первое число] [второе число]
                 </pre>
             </code>
         </div>
@@ -136,6 +138,14 @@ $list
             <div class="description" id="desc">
                 2.3 - была сделана команда $emoji<br>
                 2.35 - теперь можно с ютуба вбить ссылку в команду $play
+            </div>
+            <h2>Версия 2.4</h2>
+            <div class="description" id="desc">
+                2.4 - была добавлена команда $stop<br>
+                2.41 - доработка мелких багов<br>
+                2.42 - английская версия команд<br>
+                2.43 - было ускорено скачивание музыки командой $play<br>
+                2.44 - поддержка youtu.be ссылок ссылок командой $play
             </div>
         </div>
     </div>
